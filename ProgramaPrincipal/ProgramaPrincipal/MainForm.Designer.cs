@@ -37,6 +37,7 @@ namespace ProgramaPrincipal
 		private void InitializeComponent()
 		{
 			this.label1 = new System.Windows.Forms.Label();
+			this.btnLlevar = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -48,16 +49,28 @@ namespace ProgramaPrincipal
 			this.label1.TabIndex = 0;
 			this.label1.Text = "MENU PRINCIPAL";
 			// 
+			// btnLlevar
+			// 
+			this.btnLlevar.Location = new System.Drawing.Point(157, 205);
+			this.btnLlevar.Name = "btnLlevar";
+			this.btnLlevar.Size = new System.Drawing.Size(177, 61);
+			this.btnLlevar.TabIndex = 1;
+			this.btnLlevar.Text = "Llevar";
+			this.btnLlevar.UseVisualStyleBackColor = true;
+			this.btnLlevar.Click += new System.EventHandler(this.BtnLlevarClick);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(475, 290);
+			this.Controls.Add(this.btnLlevar);
 			this.Controls.Add(this.label1);
 			this.Name = "MainForm";
 			this.Text = "Menu Principal💋";
 			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.Button btnLlevar;
 		private System.Windows.Forms.Label label1;
 	}
 }
