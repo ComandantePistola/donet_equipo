@@ -29,5 +29,12 @@ namespace ProgramaPrincipal
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void BtnLlevarClick(object sender, EventArgs e)
+		{
+			Form1 f=new Form1();
+			f.Show();
+			this.Hide();
+		}
 	}
 }
